@@ -12,7 +12,7 @@ import java.sql.Statement;
 // Data Access Object
 // 영속성 계층 : DBMS와 상호작용하는 Layer
 // presentation layer - domain layer -  persistence layer(DAO)
-// 필요한 데이터 또는 데이터의 변경사항을 DB에 반영
+// 필요한 데이터 또는 데이터의 변경사항을 DB에 반영함
 // DB로 부터 읽어온 데이터를 domain layer에서 사용하기 적합한 형태로 parsing
 public class MemberDao {
 
@@ -118,7 +118,6 @@ public class MemberDao {
             System.out.println("SQLState: " + ex.getSQLState());
             System.out.println("VendorError: " + ex.getErrorCode());
         }
-
         return new MemberDto();
     }
 
